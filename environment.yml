@@ -1,0 +1,20 @@
+name: rps_env
+channels:
+  - defaults
+  - conda-forge
+  - anaconda
+dependencies:
+  - python
+  - numpy
+  - matplotlib
+  - pillow
+  - scikit-learn
+  - pandas
+  - seaborn
+  - requests
+  - tqdm
+  - pip
+  - pip:
+      - tensorflow
+      - streamlit
+      - opencv-python
