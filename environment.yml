@@ -16,6 +16,7 @@ dependencies:
   - tqdm
   - pip
   - pip:
-      - tensorflow
+      - tensorflow==2.13.0
       - streamlit
       - opencv-python
+      - tensorflow-datasets

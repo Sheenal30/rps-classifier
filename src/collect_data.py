@@ -1,4 +1,4 @@
-# src/download_data.py
+# src/collect_data.py
 import os
 import requests
 import zipfile
@@ -6,7 +6,7 @@ from tqdm import tqdm
 import tensorflow as tf
 
 # Define base raw data path
-RAW_DATA_DIR = os.path.join("..", "data", "raw")
+RAW_DATA_DIR = os.path.join("data", "raw")
 
 def download_rps_dataset():
     """Download Rock Paper Scissors dataset from TensorFlow"""
@@ -37,7 +37,7 @@ def save_dataset_locally(train_ds, test_ds, info):
     
     class_names = info.features['label'].names
 
-    # Create directories for each class inside ../data/raw/train and ../data/raw/test
+    # Create directories for each class inside data/raw/train and data/raw/test
     for split in ['train', 'test']:
         for class_name in class_names:
             class_dir = os.path.join(RAW_DATA_DIR, split, class_name)
@@ -58,4 +58,4 @@ def save_dataset_locally(train_ds, test_ds, info):
 if __name__ == "__main__":
     train_ds, test_ds, info = download_rps_dataset()
     save_dataset_locally(train_ds, test_ds, info)
-    print("✅ Dataset downloaded and saved successfully in ../data/raw")
+    print("✅ Dataset downloaded and saved successfully in data/raw")
