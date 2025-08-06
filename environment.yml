@@ -4,7 +4,7 @@ channels:
   - conda-forge
   - anaconda
 dependencies:
-  - python
+  - python == 3.10
   - numpy
   - matplotlib
   - pillow
@@ -12,6 +12,7 @@ dependencies:
   - pandas
   - seaborn
   - requests
+  - ipykernel
   - tqdm
   - pip
   - pip:

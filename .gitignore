@@ -1,0 +1,31 @@
+# Ignore the virtual environment
+rps_env/
+
+# Byte-compiled and cache files
+__pycache__/
+*.py[cod]
+*.so
+
+# macOS system files
+.DS_Store
+
+# Ignore all files in raw data except .gitkeep
+data/raw/*
+!data/raw/.gitkeep
+
+# Processed data can be ignored if needed
+data/processed/
+
+# Ignore model files
+models/*.h5
+models/*.pkl
+models/*.joblib
+
+# Ignore log files
+logs/*.log
+
+# Jupyter Notebook checkpoints (if any)
+.ipynb_checkpoints/
+
+# Streamlit's generated files (optional)
+.streamlit/*.toml
