@@ -1,4 +1,4 @@
-name: rps_env_tf
+name: rps_env
 channels:
   - defaults
   - conda-forge
@@ -20,3 +20,4 @@ dependencies:
       - streamlit
       - opencv-python
       - tensorflow-datasets
+      - promise==2.2.1
