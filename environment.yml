@@ -1,4 +1,4 @@
-name: rps_env
+name: rps_env_tf
 channels:
   - defaults
   - conda-forge
