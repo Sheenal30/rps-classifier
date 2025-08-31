@@ -605,7 +605,7 @@ def render_about_page():
         "**Transfer Learning**: Fine-tuned MobileNetV2 with two-stage training approach",
         "**Explainable AI**: Grad-CAM visualization for model interpretability", 
         "**Human-in-the-Loop**: Save corrected samples directly from UI for retraining",
-        "**Production Ready**: Optimized .keras format, Docker containerization",
+        "**Production Ready**: Optimized .keras format",
         "**Comprehensive Monitoring**: Automated metrics, confusion matrix, classification report"
     ]
     
