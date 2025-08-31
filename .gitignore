@@ -142,7 +142,6 @@ src/03_preliminary_model.py
 
 # Model artifacts (comment out if you want to version control models)
 models/*.h5
-models/*.keras
 models/*.pb
 models/saved_model/
 

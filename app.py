@@ -38,7 +38,7 @@ def load_model():
     models_dir = project_root() / "models"
     candidates = [
         models_dir / "best_rps_mobilenetv2.keras",
-        models_dir / "best_rps_mobilenetv2.h5",
+        # models_dir / "best_rps_mobilenetv2.h5",
     ]
     for p in candidates:
         if p.exists():
