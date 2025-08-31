@@ -1,0 +1,15 @@
+numpy
+matplotlib
+pillow
+scikit-learn
+pandas
+seaborn
+requests
+ipykernel
+tqdm
+plotly
+tensorflow==2.13.0
+streamlit
+opencv-python-headless
+tensorflow-datasets
+watchdog
