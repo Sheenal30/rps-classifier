@@ -38,79 +38,6 @@ This project demonstrates the complete pipeline for building and deploying an im
 - **Rock**: 80.0% precision, 100.0% recall, 88.9% F1-score (124 samples)  
 - **Scissors**: 99.2% precision, 100.0% recall, 99.6% F1-score (124 samples)
 
-## Project Structure
-
-```
-rps-classifier/
-├── app.py                      # Main Streamlit application
-├── app_ui.py                   # UI components module
-├── requirements.txt            # Python dependencies
-├── README.md                  # Project documentation
-├── data/                      # Data directories
-│   ├── raw/                   # Raw dataset
-│   │   ├── rps/              # Training data
-│   │   └── rps-test-set/     # Test data
-│   └── real/                  # Human-corrected samples
-├── models/                    # Trained models and artifacts
-│   ├── best_rps_mobilenetv2.keras    # Optimized model (9.1MB)
-│   ├── best_rps_mobilenetv2.h5       # HDF5 checkpoint (21MB)
-│   ├── labels.json                   # Class labels
-│   ├── metrics_report.txt            # Classification report
-│   └── confusion_matrix.png          # Confusion matrix visualization
-└── src/                       # Training scripts
-    ├── 01_download_data.py           # Dataset download script
-    ├── 02_data_preprocessing.py      # Data preprocessing
-    └── 05_retrain_mobilenetv2.py     # Current training script
-```
-
-## Setup Instructions
-
-### Prerequisites
-
-- Python 3.8+
-- Git
-
-### Local Setup
-
-1. **Clone the repository:**
-   ```bash
-   git clone <repository-url>
-   cd rps-classifier
-   ```
-
-2. **Create virtual environment:**
-   ```bash
-   python -m venv rps_env
-   source rps_env/bin/activate  # On Windows: rps_env\Scripts\activate
-   ```
-
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Download the dataset:**
-   ```bash
-   python src/01_download_data.py
-   ```
-
-5. **Pre-process the data:**
-   ```bash
-   python src/02_data_preprocessing.py
-   ```
-
-6. **Train the model:**
-   ```bash
-   python src/05_retrain_mobilenetv2.py
-   ```
-
-7. **Run the Streamlit app:**
-   ```bash
-   streamlit run app.py
-   ```
-
-   The app will be available at http://localhost:8501
-
 ## Technical Architecture
 
 ### Model Architecture
@@ -197,3 +124,77 @@ Core technologies used:
 - **scikit-learn**: Evaluation metrics
 
 See `requirements.txt` for complete dependency list.
+
+
+## Project Structure
+
+```
+rps-classifier/
+├── app.py                      # Main Streamlit application
+├── app_ui.py                   # UI components module
+├── requirements.txt            # Python dependencies
+├── README.md                  # Project documentation
+├── data/                      # Data directories
+│   ├── raw/                   # Raw dataset
+│   │   ├── rps/              # Training data
+│   │   └── rps-test-set/     # Test data
+│   └── real/                  # Human-corrected samples
+├── models/                    # Trained models and artifacts
+│   ├── best_rps_mobilenetv2.keras    # Optimized model (9.1MB)
+│   ├── best_rps_mobilenetv2.h5       # HDF5 checkpoint (21MB)
+│   ├── labels.json                   # Class labels
+│   ├── metrics_report.txt            # Classification report
+│   └── confusion_matrix.png          # Confusion matrix visualization
+└── src/                       # Training scripts
+    ├── 01_download_data.py           # Dataset download script
+    ├── 02_data_preprocessing.py      # Data preprocessing
+    └── 05_retrain_mobilenetv2.py     # Current training script
+```
+
+## Setup Instructions
+
+### Prerequisites
+
+- Python 3.8+
+- Git
+
+### Local Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd rps-classifier
+   ```
+
+2. **Create virtual environment:**
+   ```bash
+   python -m venv rps_env
+   source rps_env/bin/activate  # On Windows: rps_env\Scripts\activate
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Download the dataset:**
+   ```bash
+   python src/01_download_data.py
+   ```
+
+5. **Pre-process the data:**
+   ```bash
+   python src/02_data_preprocessing.py
+   ```
+
+6. **Train the model:**
+   ```bash
+   python src/05_retrain_mobilenetv2.py
+   ```
+
+7. **Run the Streamlit app:**
+   ```bash
+   streamlit run app.py
+   ```
+
+   The app will be available at http://localhost:8501
