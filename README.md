@@ -22,7 +22,6 @@ This project demonstrates the complete pipeline for building and deploying an im
 - **Multiple Input Methods**: Image upload, webcam capture, and test dataset samples
 - **Human-in-the-Loop**: Collect corrected samples for continuous model improvement
 - **Comprehensive Monitoring**: Detailed performance metrics and confusion matrices
-- **Production Ready**: Docker containerization with optimized deployment
 
 ## Model Performance
 
@@ -44,8 +43,6 @@ rps-classifier/
 ├── app.py                      # Main Streamlit application
 ├── app_ui.py                   # UI components module
 ├── requirements.txt            # Python dependencies
-├── Dockerfile                  # Docker configuration
-├── .dockerignore              # Files to ignore in Docker build
 ├── README.md                  # Project documentation
 ├── data/                      # Data directories
 │   ├── raw/                   # Raw dataset
@@ -70,7 +67,6 @@ rps-classifier/
 
 - Python 3.8+
 - Git
-- Docker (optional, for containerized deployment)
 
 ### Local Setup
 
@@ -112,21 +108,6 @@ rps-classifier/
    ```
 
    The app will be available at http://localhost:8501
-
-### Docker Deployment
-
-1. **Build the Docker image:**
-   ```bash
-   docker build -t rps-classifier .
-   ```
-
-2. **Run the Docker container:**
-   ```bash
-   docker run -p 8502:8502 rps-classifier
-   ```
-
-3. **Access the application:**
-   Open your browser and navigate to http://localhost:8502
 
 ## Technical Architecture
 
