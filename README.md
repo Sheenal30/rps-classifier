@@ -1,6 +1,6 @@
-# Rock-Paper-Scissors Image Classifier
+# Rock-Paper-Scissors Image Classifier App
 
-A deep learning demo that classifies images of rock, paper, or scissors hand gestures using a fine-tuned MobileNetV2 model. Includes Grad-CAM visualization and a human-in-the-loop flow to collect corrected samples from the UI.
+This is a deep learning demo that classifies images of rock, paper, or scissors hand gestures using a fine-tuned MobileNetV2 model. The app includes Grad-CAM visualization and a human-in-the-loop flow to collect corrected samples from the UI.
 
 ## Project Overview
 
